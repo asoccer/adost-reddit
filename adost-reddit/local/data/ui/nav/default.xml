@@ -1,0 +1,7 @@
+<nav search_view="search" color="#FF5700">
+  <view name="about_this_app" default='true'/>
+  <view name="reddit_front_page_analyzer" />
+  <view name="search"/>
+  <view name="reports" />
+  <view name="dashboards" />
+</nav>

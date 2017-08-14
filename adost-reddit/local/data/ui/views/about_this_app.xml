@@ -1,0 +1,27 @@
+<dashboard>
+  <label>About this app</label>
+  <description>Reddit App</description>
+  <row>
+    <panel>
+      <title>Reddit App</title>
+      <html>
+<h1><a id="Welcome_to_Splunk_Heres_a_fun_tutorial_of_how_Splunk_works_using_Live_Reddit_Data_0"></a>Welcome to Splunk! Here’s a fun tutorial of how Splunk works using Live Reddit Data!</h1>
+<p>To begin this tutorial PLEASE set the following in your inputs.conf file. I also recommend you sending your inputs to a seperate index like “reddit” but w/ the proper configuration!</p>
+<pre><code class="language-sh">[script:://...reddit_input.py]
+disabled = <span class="hljs-literal">false</span>
+</code></pre>
+<p>By default it’s</p>
+<pre><code class="language-sh">index = main
+</code></pre>
+<p>Instead try to use something else like it’s own index so you don’t clutter “main” to much.</p>
+<pre><code class="language-sh">index = reddit
+</code></pre>
+<h3><a id="Choose_your_Subreddit_to_Analyze_19"></a>Choose your Subreddit to Analyze!</h3>
+<p>By default I have set the Scripted input to only ingest stuff from /r/all so you can get a granular overview of how redditors vote during the day along with some extra stuff like “brand_safe”  and what other fields reddit has introduced into their API that hasn’t been <a href="https://www.reddit.com/r/help/comments/6sya9l/what_is_brand_safe_and_where_is_the_documentation/">announced or documented</a> hehe.</p>
+<h3><a id="Head_over_to_the_political_overview_dashboard_23"></a>Head over to the political overview dashboard</h3>
+<p>For fun I decided to ingest /r/politics given the huge political climate happening since the last election it’s always good to see what their community is commenting on and catching some key words in their comments and sorting them out visually to get a data-based understanding of the <strong>community</strong>.</p>
+
+</html>
+    </panel>
+  </row>
+</dashboard>

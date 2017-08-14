@@ -1,0 +1,30 @@
+[app/ui]
+version = 6.6.2
+modtime = 1502406356.216454000
+
+[app/launcher]
+version = 6.6.2
+modtime = 1502406356.217779000
+
+[nav/default]
+version = 6.6.2
+modtime = 1502686271.301886000
+
+[views/about_this_app]
+owner = admin
+version = 6.6.2
+modtime = 1502686600.407593000
+
+[views/karma_whores_of_reddit]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.6.2
+modtime = 1502686808.371775000
+
+[views/reddit_front_page_analyzer]
+access = read : [ * ]
+export = none
+owner = admin
+version = 6.6.2
+modtime = 1502687441.399118000

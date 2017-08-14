@@ -1,0 +1,25 @@
+<dashboard>
+  <label>Karma Whores of Reddit</label>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>index=main 
+| stats max(ups) AS "Highest Rated post",sum(ups) AS "Gross Karma",values(permalink) AS "Front Page Threads",dc(permalink) AS "Number of Threads on the FP" by author 
+| sort - "Number of Threads on the FP" 
+| head 5</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">heatmap</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">false</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
